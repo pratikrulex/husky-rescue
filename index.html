@@ -5,52 +5,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Help Riya Heal</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* Apply the custom font */
+        body { font-family: 'Poppins', sans-serif; }
+    </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-stone-50 text-stone-800 antialiased selection:bg-amber-200">
 
-    <header class="bg-white shadow-md py-6 text-center">
-        <h1 class="text-3xl font-bold text-blue-600">Help Riya Heal</h1>
-        <p class="text-gray-500 mt-2">Transparency & Fundraising Ledger</p>
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm py-5 text-center border-b border-stone-200">
+        <h1 class="text-3xl font-extrabold tracking-tight text-stone-900">
+            Help <span class="bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">Riya</span> Heal
+        </h1>
+        <p class="text-stone-500 font-semibold tracking-widest uppercase text-xs mt-1">Transparency Ledger</p>
     </header>
 
-    <main class="max-w-3xl mx-auto p-4 mt-8">
+    <main class="max-w-4xl mx-auto p-5 mt-6">
         
-        <section class="bg-white rounded-lg shadow-sm p-6 mb-8">
-            <h2 class="text-2xl font-semibold mb-4 border-b pb-2">Riya's Story</h2>
-            <p class="mb-4">From surviving on a footpath to fighting for her future. Riya was rescued after being kept chained by a roadside, surviving on minimal food and water. We are now fostering her and managing her medical treatment.</p>
-            <p class="font-semibold text-red-600">Our Goal: ₹50,000 for ongoing medical care.</p>
-        </section>
-
-        <section class="bg-blue-50 border border-blue-100 rounded-lg p-6 mb-8 text-center">
-            <h2 class="text-2xl font-semibold mb-4 text-blue-800">Support Riya's Recovery</h2>
-            <p class="mb-4">100% of your donation goes directly to her medical bills.</p>
-            
-            <div class="bg-white p-4 rounded-lg shadow-sm inline-block mb-4">
-                <p class="text-sm text-gray-500 mb-2">Scan to Donate</p>
-                <img src="upi-qr.jpg" alt="UPI QR Code" class="w-48 h-48 mx-auto object-cover border" onerror="this.onerror=null; this.src='https://via.placeholder.com/150?text=QR+Code+Here'">
+        <section class="bg-white rounded-3xl shadow-2xl shadow-stone-200/50 overflow-hidden mb-10 border border-stone-100">
+            <div class="relative h-80 sm:h-96 w-full">
+                <img src="hero-image.jpg" alt="Riya the Husky" class="absolute inset-0 w-full h-full object-cover" onerror="this.onerror=null; this.src='https://via.placeholder.com/800x400?text=Riya\'s+Photo+Coming+Soon'">
+                <div class="absolute inset-0 bg-gradient-to-t from-stone-900/80 via-stone-900/20 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-8">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white mb-2 shadow-sm">Her Journey So Far</h2>
+                </div>
             </div>
             
-            <p class="font-bold">UPI ID: your-upi-id@bank</p>
+            <div class="p-8 sm:p-10">
+                <p class="text-lg text-stone-600 leading-relaxed mb-8">From surviving on a footpath to fighting for her future. Riya was rescued after being kept chained by a roadside, surviving on minimal food and water. We are now fostering her and managing her intensive medical treatment.</p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 border-t border-stone-100 pt-8">
+                    <a href="YOUR_GOOGLE_DRIVE_LINK_HERE" target="_blank" class="flex-1 bg-amber-50 hover:bg-amber-100 text-amber-800 font-semibold py-4 px-6 rounded-2xl flex items-center justify-center transition-all duration-300 hover:-translate-y-1 hover:shadow-md border border-amber-100">
+                        <i class="fa-solid fa-file-medical mr-3 text-orange-500 text-xl"></i> Medical History
+                    </a>
+                    <a href="YOUR_GOOGLE_DRIVE_LINK_HERE" target="_blank" class="flex-1 bg-stone-100 hover:bg-stone-200 text-stone-700 font-semibold py-4 px-6 rounded-2xl flex items-center justify-center transition-all duration-300 hover:-translate-y-1 hover:shadow-md border border-stone-200">
+                        <i class="fa-solid fa-camera-retro mr-3 text-stone-500 text-xl"></i> Recovery Updates
+                    </a>
+                </div>
+            </div>
         </section>
 
-        <section class="bg-white rounded-lg shadow-sm p-6">
-            <h2 class="text-2xl font-semibold mb-4 border-b pb-2">Transparency Ledger</h2>
-            <p class="text-sm text-gray-600 mb-4">We believe in full transparency. Here are our recent donors and expenses.</p>
+        <section class="bg-gradient-to-br from-stone-900 to-stone-800 rounded-3xl shadow-xl p-10 mb-10 text-white relative overflow-hidden">
+            <div class="absolute -top-10 -right-10 w-40 h-40 bg-white/5 rounded-full blur-2xl"></div>
             
-            <div class="overflow-x-auto">
+            <div class="relative z-10 text-center">
+                <h2 class="text-3xl font-bold mb-2">Fundraising Goal</h2>
+                <p class="mb-8 text-stone-400 font-light">For ongoing medical care, medication, and specialized nutrition.</p>
+                
+                <div class="mb-3 flex justify-between items-end text-lg font-semibold px-1">
+                    <span class="text-2xl text-amber-400">₹5,000</span>
+                    <span class="text-stone-400">of ₹50,000</span>
+                </div>
+                
+                <div class="w-full bg-stone-700/50 rounded-full h-5 mb-2 backdrop-blur-sm p-1">
+                    <div class="bg-gradient-to-r from-amber-400 to-orange-500 h-full rounded-full shadow-lg transition-all duration-1000 relative" style="width: 10%">
+                        <div class="absolute top-0 right-0 bottom-0 w-4 bg-white/30 rounded-full blur-sm"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+            <div class="bg-white rounded-3xl p-8 text-center shadow-2xl shadow-stone-200/50 border border-stone-100 flex flex-col justify-center">
+                <h2 class="text-2xl font-bold mb-3 text-stone-800">Support Riya</h2>
+                <p class="text-stone-500 mb-8 text-sm">100% of your donation directly funds her recovery.</p>
+                
+                <div class="bg-stone-50 p-5 rounded-2xl border border-stone-100 inline-block mb-6 shadow-inner mx-auto">
+                    <p class="text-xs font-bold text-stone-400 mb-4 uppercase tracking-widest">Scan to Donate</p>
+                    <img src="upi-qr.jpg" alt="UPI QR Code" class="w-44 h-44 mx-auto object-cover rounded-xl shadow-sm" onerror="this.onerror=null; this.src='https://via.placeholder.com/150?text=QR+Code'">
+                </div>
+                
+                <div class="bg-stone-100 py-3 px-6 rounded-xl text-stone-700 font-semibold tracking-wide inline-block mx-auto border border-stone-200">
+                    UPI: your-upi-id@bank
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-4">
+                <div class="flex-1 bg-stone-200 rounded-3xl overflow-hidden shadow-lg border border-stone-100 group">
+                    <img src="recovery-1.jpg" alt="Riya Update 1" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x300?text=Recovery+Photo+1'">
+                </div>
+                <div class="flex-1 bg-stone-200 rounded-3xl overflow-hidden shadow-lg border border-stone-100 group">
+                    <img src="recovery-2.jpg" alt="Riya Update 2" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x300?text=Recovery+Photo+2'">
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-3xl shadow-xl shadow-stone-200/40 p-8 md:p-10 border border-stone-100">
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 gap-4">
+                <h2 class="text-2xl font-bold text-stone-800">Transparency Ledger</h2>
+                <span class="bg-emerald-50 text-emerald-600 text-xs font-bold px-4 py-2 rounded-full border border-emerald-100 flex items-center shadow-sm">
+                    <i class="fa-solid fa-shield-check mr-2"></i> Verified Funds
+                </span>
+            </div>
+            
+            <div class="overflow-x-auto rounded-2xl border border-stone-100 bg-stone-50/50">
                 <table class="min-w-full text-left text-sm whitespace-nowrap">
-                    <thead class="uppercase tracking-wider border-b-2">
+                    <thead class="text-stone-500 uppercase tracking-wider font-semibold border-b border-stone-200">
                         <tr>
-                            <th scope="col" class="px-6 py-4">Date</th>
-                            <th scope="col" class="px-6 py-4">Name</th>
-                            <th scope="col" class="px-6 py-4 text-right">Amount (₹)</th>
+                            <th scope="col" class="px-6 py-5">Date</th>
+                            <th scope="col" class="px-6 py-5">Donor</th>
+                            <th scope="col" class="px-6 py-5 text-right">Amount (₹)</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr class="border-b">
-                            <td class="px-6 py-4">Mar 30, 2026</td>
-                            <td class="px-6 py-4">Well Wisher</td>
-                            <td class="px-6 py-4 text-right">500</td>
+                    <tbody class="divide-y divide-stone-100 text-stone-700">
+                        <tr class="hover:bg-white transition duration-200">
+                            <td class="px-6 py-5 font-medium">Apr 02, 2026</td>
+                            <td class="px-6 py-5 flex items-center gap-3">
+                                <div class="w-8 h-8 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center font-bold text-xs">W</div>
+                                Well Wisher
+                            </td>
+                            <td class="px-6 py-5 text-right font-bold text-emerald-600">+ ₹5,000</td>
+                        </tr>
+                        <tr class="hover:bg-white transition duration-200">
+                            <td class="px-6 py-5 font-medium">Mar 30, 2026</td>
+                            <td class="px-6 py-5 flex items-center gap-3">
+                                <div class="w-8 h-8 rounded-full bg-stone-200 text-stone-500 flex items-center justify-center font-bold text-xs">A</div>
+                                Anonymous
+                            </td>
+                            <td class="px-6 py-5 text-right font-bold text-emerald-600">+ ₹500</td>
                         </tr>
                     </tbody>
                 </table>
@@ -59,8 +133,11 @@
         
     </main>
 
-    <footer class="text-center py-8 text-sm text-gray-500">
-        <p>Managed with ❤️ for Riya.</p>
+    <footer class="text-stone-400 py-12 text-center mt-6">
+        <p class="mb-3 font-medium">Managed with <i class="fa-solid fa-heart text-red-400 mx-1"></i> for Riya.</p>
+        <a href="https://wa.me/YOURNUMBER" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-stone-100 hover:bg-stone-200 text-stone-600 transition-colors text-sm font-semibold border border-stone-200 shadow-sm">
+            <i class="fa-brands fa-whatsapp text-green-500 text-lg"></i> Message Us
+        </a>
     </footer>
 
 </body>
